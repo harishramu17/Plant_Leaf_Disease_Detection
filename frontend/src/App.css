@@ -1,0 +1,99 @@
+/* Reset some margin and padding */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.upload-form,
+.predictions-list {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.upload-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upload-form input[type="file"] {
+  padding: 5px;
+}
+
+.upload-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-form button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.upload-form button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.result img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.prediction-card {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.prediction-card .images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.prediction-card .images > div {
+  flex: 1 1 300px;
+}
+
+.prediction-card img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .prediction-card .images {
+    flex-direction: column;
+  }
+}
