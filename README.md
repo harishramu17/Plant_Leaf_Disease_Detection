@@ -1,8 +1,28 @@
-# Plant-Leaf-Detection-Using-YoloV8
+# 🌿 Plant Leaf Disease Detection using YOLOv8
 
-<h1>Introduction</h1>
-This project aims to develop an efficient and accurate plant leaf disease detection system using YOLOv8, a state-of-the-art object detection model. The primary objective is to detect diseases in plant leaves early on, enabling timely interventions and preventing extensive damage to crops. The YOLOv8 model is a powerful tool for real-time object detection, making it suitable for monitoring large agricultural areas.
+This project is focused on building an efficient and accurate plant leaf disease detection system using **YOLOv8**, a cutting-edge real-time object detection model. Early detection of plant diseases can help farmers and agricultural professionals take timely action, reducing crop loss and improving yield quality.
 
-![val_batch1_pred](https://github.com/harishramu17/Plant-Leaf-Detection-Using-YoloV8/assets/107133605/59221cf0-0d88-471a-8cf2-e17da1a7774c)
+## 🚀 Features
 
-<h1>Demo : </h1> https://drive.google.com/file/d/1Io9tRSVhWjrv-YohOmrd1WnrxcbdzKj9/view?usp=drivesdk
+- 🔍 Real-time detection of diseases in plant leaves using YOLOv8
+- 🖼️ Image upload via a modern web interface
+- 📊 Disease detection results and image metadata stored in MongoDB
+- 🌐 Full-stack application with React frontend, Flask backend, and MongoDB database
+
+## 🛠️ Tech Stack
+
+- **Frontend:** [React.js](https://reactjs.org/)
+- **Backend:** [Flask](https://flask.palletsprojects.com/)
+- **Database:** [MongoDB](https://www.mongodb.com/)
+- **Model:** [YOLOv8](https://github.com/ultralytics/ultralytics)
+
+## 📷 How It Works
+
+1. User either uploads an image or captures one using the camera through the React interface.
+2. The image is sent to the Flask backend.
+3. YOLOv8 processes the image and detects any signs of disease.
+4. Results are stored in MongoDB and displayed on the frontend.
+
+## Demo  
+https://drive.google.com/file/d/1Io9tRSVhWjrv-YohOmrd1WnrxcbdzKj9/view?usp=drivesdk
+
